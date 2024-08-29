@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 18px;
+}
+
+.header {
+    background-color: lightgray;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+}
+
+.header h1 {
+    color: #4a90e2;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav p {
+    margin: 0;
+    padding: 10px 15px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
+    font-size: 1.1em;
+}
+
+nav p:hover {
+    color: #4a90e2;
+}
+
+button {
+    width: 130px;
+    color: black;
+    background-color: orangered;
+    padding: 10px;
+    border-radius: 5px;
+    height: 50px;
+    font-size: 23px;
+}
+
+.basketball i {
+    color: orange;
+    margin-left: auto;
+    font-size: 2em;
+}
+
+#btn {
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1em;
+    width: 120px;
+    height: 60px;
+}
+
+#btn:hover {
+    background-color: darkblue;
+}
+
+.main_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.content1, .content2 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    flex: 1;
+    min-width: 250px;
+    box-sizing: border-box;
+    font-size: 1.1em;
+}
+
+.content1 {
+    position: relative;
+}
+
+#button {
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+    width: 190px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1em;
+    height: 60px;
+}
+
+.parul {
+    margin-top: 20px;
+}
+
+.footer {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    margin-top: 40px;
+    font-size: 1.2em;
+}
+
+.shital {
+    margin-left: 20px;
+}
+
+.k {
+    background-color: yellow;
+    border: none;
+    color: black;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 1.1em;
+    width: 120px;
+}
+
+.content2 {
+    background-image: url("girl.avif");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    min-height: 600px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    position: absolute;
+    top: 30%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    text-align: center;
+}
+
+.instagram {
+    position: absolute;
+    top: 20%;  
+    left: 5%;  
+    font-size: 90px;
+}
+
+.music {
+    position: absolute;
+    top: 40%;  
+    left: 5%;  
+    font-size: 90px;
+    color:white;
+}
+
+.slack {
+    position: absolute;
+    top: 20%;  
+    right: 5%; 
+    font-size: 90px;
+    color: black;
+}
+
+.twitter {
+    position: absolute;
+    top: 40%;  
+    right: 5%; 
+    font-size: 90px;
+    color: black;
+}
+
+#Box {
+    position: absolute;
+    top: 60%; 
+    left: 50%;
+    transform: translateX(-50%);
+    height: 90px;
+    width: 500px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 10px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .icon-container {
+        flex-direction: column;
+    }
+
+    .content2 {
+        background-position: center;
+    }
+
+    .basketball i {
+        margin: 10px;
+    }
+
+    .center {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    #Box {
+        width: 80%;
+        font-size: 1.5em;
+    }
+}
